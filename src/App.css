@@ -1,0 +1,84 @@
+.name {                
+     white-space: nowrap;       
+     overflow: hidden;          
+     border-right: 2px solid red; 
+     animation: typing 3s steps(18), blink 5s  infinite alternate;
+   }
+   
+   @keyframes typing {
+     from { width: 0; }
+     to { width: 14ch; }  
+   }
+   
+   @keyframes blink {
+     50% { border-color: transparent; }
+   }
+   @keyframes shake {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    20% { transform: translate(-2px, 2px) rotate(-1deg); }
+    40% { transform: translate(-2px, -2px) rotate(1deg); }
+    60% { transform: translate(2px, 2px) rotate(0deg); }
+    80% { transform: translate(2px, -2px) rotate(1deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+  }
+
+  .float-animate {
+    animation: shake 0.4s linear infinite;
+  }
+   
+ 
+  .about_card {
+    background-color: #1f2937; 
+    color: #f3f4f6;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  
+  .about_card:hover {
+    animation: shake 0.5s ease-in-out;
+  }
+  
+  
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-5px); }
+    40% { transform: translateX(5px); }
+    60% { transform: translateX(-5px); }
+    80% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+  }
+  .project_card {width: 320px;
+    transform: scale(1); 
+    transition: transform 0.7s ease-in-out;
+  
+  }
+  
+  .project_card:hover {
+    transform: scale(1.05); 
+  }
+  
+  [data-aos^="fade"] {
+  transform: none !important;
+}
+
+
+
+/* Spin animation */
+@keyframes spinInPlace {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+.animate-circle { animation: spinInPlace 3s linear infinite;
+}
