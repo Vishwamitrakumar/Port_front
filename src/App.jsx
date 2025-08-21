@@ -1,3 +1,5 @@
+import React, { useEffect, useState } from "react";
+import Loader from "./Component/Loader";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navigation from './Component/Navigation';
 import Home from './Component/HOme';
@@ -7,6 +9,20 @@ import Contact from './Component/Contant';
 import About from './Component/About'
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+  
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
+
+  if (loading) {
+    return <Loader />; 
+  }
+
+
   return (
     <>
       <Router>

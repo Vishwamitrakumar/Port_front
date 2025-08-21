@@ -53,6 +53,7 @@
   .project_card {width: 320px;
     transform: scale(1); 
     transition: transform 0.7s ease-in-out;
+    padding-bottom: 10px;
   
   }
   

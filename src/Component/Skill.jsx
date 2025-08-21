@@ -26,9 +26,9 @@ const Skill = () => {
   ];
   
   return(
-    <section className="bg-gradient-to-r from-cyan-600 via-teal-500 to-indigo-900 min-h-screen">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-white text-center mb-10">My Skills</h2>
+    <section className="bg-gradient-to-r from-cyan-600 via-teal-500 to-indigo-900 min-h-screen    ">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
+        <h2 className="text-3xl font-bold text-white text-center mb-6">My Skills</h2>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 justify-items-center">
           {skills.map((skill, index) => (

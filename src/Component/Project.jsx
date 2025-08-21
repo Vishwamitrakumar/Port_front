@@ -59,7 +59,7 @@ const Project = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-lg overflow-hidden transform transition-transform duration-500 ease-in-out hover:scale-105 mx-auto sm:mx-auto md:mx-auto project_card"
+              className="bg-white rounded-2xl shadow-lg overflow-hidden transform transition-transform duration-500 ease-in-out hover:scale-105 mx-auto sm:mx-auto md:mx-auto  project_card"
               data-aos={animations[index % animations.length]}
             >
               <img
