@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-around items-center md:items-start space-y-6 md:space-y-0">
             <div className="text-center md:text-left">
             <h3 className="text-2xl font-bold">Contact</h3>
-            <p className="text-gray-400 mt-2">Address : Jaipur Pratap Nagar</p>
+            <p className="text-gray-400 mt-2">Address : Pratap Nagar Jaipur</p>
             <p className="text-gray-400 mt-2">Email : kumarvishwamitra14@gmail.com</p>
             <p className="text-gray-400 mt-2">Phone No : 7281828802</p>
           </div>
