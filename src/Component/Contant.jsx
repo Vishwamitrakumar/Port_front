@@ -47,7 +47,7 @@ const Contant = () => {
     if (validate()) {
       console.log("Form Submitted", formData);
       alert("Form submitted successfully!");
-      axios.post("http://localhost:8080/user", formData, {
+      axios.post("https://my-portfolio-867h.onrender.com/user", formData, {
         withCredentials: true
       });
       setFormData({ name: "", email: "", phone: "", message: "" });
