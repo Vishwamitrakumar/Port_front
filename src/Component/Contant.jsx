@@ -47,9 +47,7 @@ const Contant = () => {
     if (validate()) {
       console.log("Form Submitted", formData);
       alert("Form submitted successfully!");
-      axios.post("https://my-portfolio-bi3v.onrender.com/user", formData, {
-        withCredentials: true
-      });
+      axios.post("https://my-portfolio-bi3v.onrender.com/user", formData);
       setFormData({ name: "", email: "", phone: "", message: "" });
       setErrors({});
     }
